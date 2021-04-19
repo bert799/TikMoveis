@@ -1,10 +1,10 @@
-package br.edu.insper.desagil.q2aI;
+package br.edu.insper.desagil.questao2;
 
 public class Produto {
 	private String Nome;
 	private double preco;
 	
-	public Produto(String nome, long preco) {
+	public Produto(String nome, double preco) {
 		Nome = nome;
 		this.preco = preco;
 	}

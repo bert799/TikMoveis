@@ -1,4 +1,4 @@
-package br.edu.insper.desagil.q2aI;
+package br.edu.insper.desagil.questao2;
 
 import java.util.HashMap;
 import java.util.Map;
