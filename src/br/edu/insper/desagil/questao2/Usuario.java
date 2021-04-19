@@ -25,7 +25,7 @@ public class Usuario {
 	
 	public int totalAvaliacoes() {
 		int total = 0;
-		for(Video video : videos) {
+		for(Video video : this.videos) {
 			total += video.mediaAvaliacoes();
 		}
 		return total;

@@ -26,17 +26,19 @@ public class Video {
 	
 	public void adicionaAvaliacao(Usuario usuario, double avaliacao) {
 		String nome = usuario.getNome();
-		if (nome == this.usuario || (avaliacao >= 1) || (avaliacao <= 5)) {
+		if (!(nome == this.usuario) & (avaliacao >= 1) & (avaliacao <= 5)) {
 			this.avaliacoes.put(nome, avaliacao);
 		}
 	}
 	
 	public int mediaAvaliacoes() {
 		double total = 0;
+		int n = 0;
 		for(String nome : this.avaliacoes.keySet()) {
 			total += this.avaliacoes.get(nome);
+			n += 1;
 		}
-		return (int) Math.round(total);
+		return (int) Math.round(total/n);
 	}
 	
 }
