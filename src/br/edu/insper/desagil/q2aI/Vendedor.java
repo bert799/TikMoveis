@@ -1,5 +1,9 @@
 package br.edu.insper.desagil.q2aI;
 
-public class Vendedor {
+import java.util.List;
 
+public class Vendedor extends Usuario {
+	private List<Produto> produtos;
+	
 }
+

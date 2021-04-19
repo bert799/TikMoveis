@@ -2,7 +2,7 @@ package br.edu.insper.desagil.q2aI;
 
 public class Produto {
 	private String Nome;
-	private long preco;
+	private double preco;
 	
 	public Produto(String nome, long preco) {
 		Nome = nome;
@@ -13,7 +13,7 @@ public class Produto {
 		return Nome;
 	}
 
-	public long getPreco() {
+	public double getPreco() {
 		return preco;
 	}
 	
